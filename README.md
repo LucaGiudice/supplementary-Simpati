@@ -14,13 +14,14 @@
    ```
 
 ### PIPELINE TO GET Simpati RESULTS AND PERFORMANCES ON RNAseq AND SOMATIC MUTATION DATA
-1. Download and unzip the Simpati data and scripts from the [link]()
-2. Simpati_v31_stable/output/op1 directory contains the results used in the publication, if you want to get fresh new output data you can remove it
-3. Run the simpati container building the unzipped Simpati directory to the following path: /home/lgiudice/containers/Simpati_v31_stable
+1. Download and unzip the Simpati data and scripts from the [link](https://univr-my.sharepoint.com/:u:/g/personal/luca_giudice_univr_it/EeQJQb335QlGtTdMd3ni2mIBiRLpfqAI9BWlwxE06EMHWA?e=pbtt4X)
+   - With bash: ``` https://univr-my.sharepoint.com/:u:/g/personal/luca_giudice_univr_it/EeQJQb335QlGtTdMd3ni2mIB79wUeVy151SpVG8ULWqi2w?download=1 --no-check-certificate -O Simpati_v31_stable.7z ```
+3. Simpati_v31_stable/output/op1 directory contains the results used in the publication, if you want to get fresh new output data you can remove it
+4. Run the simpati container building the unzipped Simpati directory to the following path: /home/lgiudice/containers/Simpati_v31_stable
    - With bash: ``` docker run --rm -it -v Simpati_v31_stable:/home/lgiudice/containers/Phoenix_v31_stable lgiudice/simpati:latest /bin/bash ```
-4. Modify the script op1_Classification_v9_Mut_par.R at the line 91 and 96 based on your computational resources, setting the RAM memory and the number of cores
-5. Modify the script op1_Classification_v9_RNAseq_par.R at the line 91 and 96 based on your computational resources, setting the RAM memory and the number of cores
-6. Now you are ready to run Simpati:
+5. Modify the script op1_Classification_v9_Mut_par.R at the line 91 and 96 based on your computational resources, setting the RAM memory and the number of cores
+6. Modify the script op1_Classification_v9_RNAseq_par.R at the line 91 and 96 based on your computational resources, setting the RAM memory and the number of cores
+7. Now you are ready to run Simpati:
    ```
    Rscript op1_Classification_v9_Mut_par.R
    Rscript op1_Classification_v9_RNAseq_par.R
