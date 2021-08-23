@@ -27,6 +27,8 @@
    Rscript op1_Classification_v9_RNAseq_par.R
    ```
 
+![Example](https://raw.githubusercontent.com/LucaGiudice/supplementary-Simpati/main/images/pipeline_example.gif?token=AHESZ3WDK323ZIW5SO7L35LBFTKOS)
+
 ### PIPELINE TO GET netDx RESULTS AND PERFORMANCES ON SOMATIC MUTATION DATA
 1. Download and unzip the netDx data and scripts from the [link](https://univr-my.sharepoint.com/:u:/g/personal/luca_giudice_univr_it/EdeJn9yyrfFNv0rAikZF1gYBdoLzM_9HGWU8Pyw7wVJNhQ?e=EvsL3a)
    - With bash: ```  wget https://univr-my.sharepoint.com/:u:/g/personal/luca_giudice_univr_it/EdeJn9yyrfFNv0rAikZF1gYBdoLzM_9HGWU8Pyw7wVJNhQ?download=1 --no-check-certificate -O netDx_Mut.7z ```
