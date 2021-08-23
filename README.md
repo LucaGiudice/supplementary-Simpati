@@ -2,6 +2,7 @@
 
 ## CONTENT
 - Data and methods to replicate the results obtained by Simpati, netDx and PASNet
+  - ciao
 
 ## REQUIREMENTS
 1. Install Docker for your operating system following the [link](https://docs.docker.com/get-docker/)
@@ -14,7 +15,7 @@
 
 ### PIPELINE TO GET netDx RESULTS AND PERFORMANCES ON SOMATIC MUTATION DATA
 1. Download and unzip the netDx data and scripts from the [link](https://univr-my.sharepoint.com/:u:/g/personal/luca_giudice_univr_it/EdeJn9yyrfFNv0rAikZF1gYBdoLzM_9HGWU8Pyw7wVJNhQ?e=EvsL3a)
-- With bash: ```  wget https://univr-my.sharepoint.com/:u:/g/personal/luca_giudice_univr_it/EdeJn9yyrfFNv0rAikZF1gYBdoLzM_9HGWU8Pyw7wVJNhQ?download=1 --no-check-certificate -O netDx_Mut.7z ```
+   - With bash: ```  wget https://univr-my.sharepoint.com/:u:/g/personal/luca_giudice_univr_it/EdeJn9yyrfFNv0rAikZF1gYBdoLzM_9HGWU8Pyw7wVJNhQ?download=1 --no-check-certificate -O netDx_Mut.7z ```
 3. netDx/output directory contains the results used in the publication, if you want to get fresh new output data you can remove everything except: op2_TCGA4netDx_mut
 4. Run the comp1 container building the unzipped netDx directory to the following path: /home/lgiudice/containers/netDx_Mut
    - With bash: ``` docker run --rm -it -v /netDx_Mut:/home/lgiudice/containers/netDx_Mut lgiudice/comp1:latest /bin/bash ```
