@@ -2,7 +2,6 @@
 
 ## CONTENT
 - Data and methods to replicate the results obtained by Simpati, netDx and PASNet
-  - ciao
 
 ## REQUIREMENTS
 1. Install Docker for your operating system following the [link](https://docs.docker.com/get-docker/)
