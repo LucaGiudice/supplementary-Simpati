@@ -7,10 +7,10 @@
 1. Install Docker for your operating system following the [link]()
 2. Pull two containers (one containing netDx enviroment, one PASNet enviroment): lgiudice/comp1:latest and lgiudice/comp2:latest
    - In case of a linux operating system you can use the following commands: 
-   '''
-   docker pull lgiudice/comp1:latest
-   docker pull lgiudice/comp2:latest
-   '''
+'''
+docker pull lgiudice/comp1:latest
+docker pull lgiudice/comp2:latest
+'''
 
 ### WORKFLOW TO GET netDx RESULTS AND PERFORMANCES ON SOMATIC MUTATION DATA
 1. Download and unzip the netDx data and scripts from the [link]()
