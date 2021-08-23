@@ -20,7 +20,7 @@
    - With bash: ``` docker run --rm -it -v Simpati_v31_stable:/home/lgiudice/containers/Phoenix_v31_stable lgiudice/simpati:latest /bin/bash ```
 4. Modify the script op1_Classification_v9_Mut_par.R at the line 91 and 96 based on your computational resources, setting the RAM memory and the number of cores
 5. Modify the script op1_Classification_v9_RNAseq_par.R at the line 91 and 96 based on your computational resources, setting the RAM memory and the number of cores
-6. Now you are ready to run netDx:
+6. Now you are ready to run Simpati:
    ```
    Rscript op1_Classification_v9_Mut_par.R
    Rscript op1_Classification_v9_RNAseq_par.R
