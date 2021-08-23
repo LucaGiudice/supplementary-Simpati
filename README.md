@@ -12,7 +12,7 @@
    docker pull lgiudice/comp2:latest
    ```
 
-### WORKFLOW TO GET netDx RESULTS AND PERFORMANCES ON SOMATIC MUTATION DATA
+### PIPELINE TO GET netDx RESULTS AND PERFORMANCES ON SOMATIC MUTATION DATA
 1. Download and unzip the netDx data and scripts from the [link]()
 2. netDx/output directory contains the results used in the publication, if you want to get fresh new output data you can remove everything except: op2_TCGA4netDx_mut
 3. Run the comp1 container building the unzipped netDx directory to the following path: /home/lgiudice/containers/netDx_Mut
@@ -25,7 +25,7 @@
    Rscript op3_multi_omics_TCGA_large.R
    ```
 
-### WORKFLOW TO GET netDx RESULTS AND PERFORMANCES ON RNAseq DATA
+### PIPELINE TO GET netDx RESULTS AND PERFORMANCES ON RNAseq DATA
 1. Download and unzip the netDx data and scripts from the following [link](https://univr-my.sharepoint.com/:u:/g/personal/luca_giudice_univr_it/EXaGdLX9_e5Huj_KjoOfF4gB_HcOou9ghoTQ1zF0ZI77zw?e=nslkiE)
    - With bash: ```  wget https://univr-my.sharepoint.com/:u:/g/personal/luca_giudice_univr_it/EXaGdLX9_e5Huj_KjoOfF4gB_HcOou9ghoTQ1zF0ZI77zw?download=1 --no-check-certificate -O netDx.7z ```
 3. netDx/output directory contains the results used in the publication, if you want to get fresh new output data you can remove everything except: op2_TCGA4netDx_RNAseq
@@ -40,7 +40,7 @@
    ```
 
 
-### WORKFLOW TO GET PASNet RESULTS AND PERFORMANCES ON RNAseq DATA
+### PIPELINE TO GET PASNet RESULTS AND PERFORMANCES ON RNAseq DATA
 1. Download and unzip the PASNet data and scripts from the following [link]()
 2. PASNet/output/<dataset>/output_py directory contains the results used in the publication for a specific dataset, if you want to get fresh new output data you can delete that directory
 3. Run the comp2 container building the unzipped PASNet directory to the following path: /home/PASNet
